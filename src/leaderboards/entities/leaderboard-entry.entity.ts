@@ -44,7 +44,7 @@ export class LeaderboardEntry {
   @Column({ type: 'decimal', precision: 20, scale: 8 })
   score: number;
 
-  @Column({ nullable: true })
+  @Column({ type: 'integer', nullable: true })
   rank: number | null;
 
   @CreateDateColumn({ name: 'created_at' })
