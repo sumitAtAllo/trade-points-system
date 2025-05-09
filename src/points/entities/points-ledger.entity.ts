@@ -39,7 +39,7 @@ export class PointsLedger {
   @Column({ type: 'text', nullable: true })
   description: string | null;
 
-  @Column({ name: 'expires_at', nullable: true })
+  @Column({ name: 'expires_at', type: 'timestamp', nullable: true })
   expiresAt: Date | null;
 
   @CreateDateColumn({ name: 'created_at' })
